@@ -80,12 +80,68 @@
 		"pin_to_sibling_corner"						"PIN_CENTER_TOP"
 	}
 
-	//==================================================================================================================================================
-	// REMOVED ELEMENTS
-	//==================================================================================================================================================
-	"ChargeMeter"{"ControlName" "ContinuousProgressBar" "fieldName" "ChargeMeter" "xpos" "9999" "ypos" "9999" "wide" "0" "tall" "0" "visible" "0" "enabled" "0"}
-	"ChargeMeter1"{"ControlName" "ContinuousProgressBar" "fieldName" "ChargeMeter1" "xpos" "9999" "ypos" "9999" "wide" "0" "tall" "0" "visible" "0" "enabled" "0"}
-	"ChargeMeter2"{"ControlName" "ContinuousProgressBar" "fieldName" "ChargeMeter2" "xpos" "9999" "ypos" "9999" "wide" "0" "tall" "0" "visible" "0" "enabled" "0"}
-	"ChargeMeter3"{"ControlName" "ContinuousProgressBar" "fieldName" "ChargeMeter3" "xpos" "9999" "ypos" "9999" "wide" "0" "tall" "0" "visible" "0" "enabled" "0"}
-	"ChargeMeter4"{"ControlName" "ContinuousProgressBar" "fieldName" "ChargeMeter4" "xpos" "9999" "ypos" "9999" "wide" "0" "tall" "0" "visible" "0" "enabled" "0"}
+	"ChargeMeter"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter"
+		"xpos"										"cs-0.5"
+		"ypos"										"c40"
+		"zpos"										"2"
+		"wide"										"80"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
+
+	"ChargeMeter1"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter1"
+		"xpos"										"c-43"
+		"ypos"										"c40"
+		"zpos"										"2"
+		"wide"										"20"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
+
+	"ChargeMeter2"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter2"
+		"xpos"										"c-21"
+		"ypos"										"c40"
+		"zpos"										"2"
+		"wide"										"20"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
+
+	"ChargeMeter3"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter3"
+		"xpos"										"c1"
+		"ypos"										"c40"
+		"zpos"										"2"
+		"wide"										"20"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
+
+	"ChargeMeter4"
+	{
+		"ControlName"								"ContinuousProgressBar"
+		"fieldName"									"ChargeMeter4"
+		"xpos"										"c23"
+		"ypos"										"c40"
+		"zpos"										"2"
+		"wide"										"20"
+		"tall"										"8"
+		"visible"									"1"
+		"enabled"									"1"
+	}
 }
