@@ -702,15 +702,15 @@
 	}
 	"WinPanel"
 	{
-		"fieldName"									"WinPanel"
-		"visible"									"1"
-		"enabled"									"1"
-		"xpos"										"0"
-		"ypos"										"0"
-		"wide"										"f0"
-		"tall"										"f0"
-		"zpos"										"6"
-		"proportionaltoparent"						"1"
+		"fieldName"			"WinPanel"
+		"visible"			"1"
+		"enabled"			"1"
+		"xpos"				"c-100"
+		"ypos"				"r145"
+		"ypos_minmode"		"r40"
+		"zpos"				"10"
+		"wide"				"200"
+		"tall"				"152"
 	}
 	"ArenaWinPanel"
 	{
