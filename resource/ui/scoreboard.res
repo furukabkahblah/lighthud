@@ -11,7 +11,7 @@
 		"visible"									"1"
 		"enabled"									"1"
 
-		"medal_column_width"						"0"
+		"medal_column_width"						"18"
 		"medal_width"								"0"
 		"avatar_width"								"28"
 		"spacer"									"2"
