@@ -17,7 +17,7 @@
 		"xpos"										"rs1"
 		"ypos"										"0"
 		"zpos"										"0"
-		"wide"										"39"
+		"wide"										"40"
 		"tall"										"f0"
 		"visible"									"1"
 		"enabled"									"1"
