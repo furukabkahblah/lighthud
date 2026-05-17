@@ -261,7 +261,7 @@
 		"ypos"										"1"
 		"zpos"										"-1"
 		"wide"										"492"
-		"tall"										"11"
+		"tall"										"22"
 		"visible"									"1"
 		"enabled"									"1"
 		"proportionaltoparent"						"1"
@@ -276,7 +276,10 @@
 
 		"if_mvm"
 		{
-			"visible"								"0"
+			"xpos"						"19"
+			"ypos"						"19"
+			"wide"						"530"
+			"tall"						"11"
 		}
 	}
 	"ServerTimeLeft"
@@ -354,7 +357,7 @@
 		"ControlName"								"CExLabel"
 		"fieldName"									"MapName"
 		"xpos"										"-3"
-		"ypos"										"0"
+		"ypos"										"-11"
 		"wide"										"200"
 		"tall"										"11"
 		"visible"									"1"
@@ -368,7 +371,7 @@
 
 		"if_mvm"
 		{
-			"visible"								"0"
+			"ypos"						"0"
 		}
 	}
 	"Spectators"
@@ -387,12 +390,6 @@
 		"textAlignment"								"west"
 		"font"										"DefaultVerySmall"
 		"fgcolor"									"White"
-		"alpha"										"150"
-
-		"if_mvm"
-		{
-			"visible"								"0"
-		}
 	}
 	"SpectatorsInQueue"
 	{
@@ -425,7 +422,7 @@
 		"ypos"										"0"
 		"zpos"										"3"
 		"wide"										"492"
-		"tall"										"11"
+		"tall"										"22"
 		"visible"									"1"
 		"enabled"									"1"
 		"proportionaltoparent"						"1"
@@ -433,17 +430,168 @@
 
 		"if_mvm"
 		{
-			"wide"									"0"
+			"xpos"						"0"
+			"ypos"						"0"
+			"wide"						"530"
+			"tall"						"11"
 		}
+
+		"DamageLabel"
+		{
+			"ControlName"						"CExLabel"
+			"fieldName"							"DamageLabel"
+			"font"								"ScoreboardVerySmall"
+			"labelText"							"#TF_Scoreboard_Damage"
+			"fgcolor"							"Gray"
+			"textAlignment"						"west"
+			"textinsetx"						"10"
+			"xpos"								"0"
+			"ypos"								"0"
+			"zpos"								"3"
+			"wide"								"41"
+			"tall"								"11"
+			"visible"							"1"
+			"enabled"							"1"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
+		"Damage"
+		{
+			"ControlName"								"CExLabel"
+			"fieldName"									"Damage"
+			"font"										"ScoreboardVerySmall"
+			"labelText"									"%damage%"
+			"textAlignment"								"west"
+			"xpos"										"0"
+			"ypos"										"0"
+			"zpos"										"3"
+			"wide"										"41"
+			"tall"										"11"
+			"visible"									"1"
+			"enabled"									"1"
+			"pin_to_sibling"							"DamageLabel"
+			"pin_corner_to_sibling"						"PIN_TOPLEFT"
+			"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
+		"HealingLabel"
+		{
+			"ControlName"								"CExLabel"
+			"fieldName"									"HealingLabel"
+			"font"										"ScoreboardVerySmall"
+			"labelText"									"#TF_ScoreBoard_HealingLabel"
+			"fgcolor"									"Gray"
+			"textAlignment"								"west"
+			"textinsetx"								"10"
+			"xpos"										"0"
+			"ypos"										"0"
+			"zpos"										"3"
+			"wide"										"41"
+			"tall"										"11"
+			"visible"									"1"
+			"enabled"									"1"
+			"pin_to_sibling"							"Damage"
+			"pin_corner_to_sibling"						"PIN_TOPLEFT"
+			"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
+		"Healing"
+		{
+			"ControlName"								"CExLabel"
+			"fieldName"									"Healing"
+			"font"										"ScoreboardVerySmall"
+			"labelText"									"%healing%"
+			"textAlignment"								"west"
+			"xpos"										"0"
+			"ypos"										"0"
+			"zpos"										"3"
+			"wide"										"41"
+			"tall"										"11"
+			"visible"									"1"
+			"enabled"									"1"
+			"pin_to_sibling"							"HealingLabel"
+			"pin_corner_to_sibling"						"PIN_TOPLEFT"
+			"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
+		"DominationLabel"
+		{
+			"ControlName"								"CExLabel"
+			"fieldName"									"DominationLabel"
+			"font"										"ScoreboardVerySmall"
+			"labelText"									"#TF_ScoreBoard_DominationLabel"
+			"fgcolor"									"Gray"
+			"textAlignment"								"west"
+			"textinsetx"								"10"
+			"xpos"										"0"
+			"ypos"										"0"
+			"zpos"										"3"
+			"wide"										"41"
+			"tall"										"11"
+			"visible"									"1"
+			"enabled"									"1"
+			"pin_to_sibling"							"Healing"
+			"pin_corner_to_sibling"						"PIN_TOPLEFT"
+			"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
+		"Domination"
+		{
+			"ControlName"								"CExLabel"
+			"fieldName"									"Domination"
+			"font"										"ScoreboardVerySmall"
+			"labelText"									"%dominations%"
+			"textAlignment"								"west"
+			"xpos"										"0"
+			"ypos"										"0"
+			"zpos"										"3"
+			"wide"										"41"
+			"tall"										"11"
+			"visible"									"1"
+			"enabled"									"1"
+			"pin_to_sibling"							"DominationLabel"
+			"pin_corner_to_sibling"						"PIN_TOPLEFT"
+			"pin_to_sibling_corner"						"PIN_TOPRIGHT"
+
+			"if_mvm"
+			{
+				"visible"						"0"
+			}
+		}
+
 		"K/D"
 		{
 			"ControlName"							"CExLabel"
 			"fieldName"								"K/D"
 			"xpos"									"cs-0.5"
-			"ypos"									"cs-0.5"
+			"ypos"									"rs1"
 			"zpos"									"3"
 			"wide"									"10"
-			"tall"									"f0"
+			"tall"									"11"
 			"visible"								"1"
 			"enabled"								"1"
 			"proportionaltoparent"					"1"
@@ -451,6 +599,11 @@
 			"labelText"								":"
 			"textAlignment"							"center"
 			"fgcolor"								"White"
+
+			"if_mvm"
+			{
+				"ypos"						"cs-0.5"
+			}
 		}
 		"Kills"
 		{
@@ -460,7 +613,7 @@
 			"ypos"									"0"
 			"zpos"									"3"
 			"wide"									"300"
-			"tall"									"f0"
+			"tall"									"11"
 			"visible"								"1"
 			"enabled"								"0"
 			"proportionaltoparent"					"1"
@@ -481,7 +634,7 @@
 			"ypos"									"0"
 			"zpos"									"3"
 			"wide"									"300"
-			"tall"									"f0"
+			"tall"									"11"
 			"visible"								"1"
 			"enabled"								"0"
 			"proportionaltoparent"					"1"
